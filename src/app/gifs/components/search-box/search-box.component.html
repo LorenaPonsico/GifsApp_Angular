@@ -1,4 +1,10 @@
 <h5>Buscar:</h5>
 <input type="text"
 class="form-control"
-placeholder="Buscar Gifs...">
+placeholder="Buscar Gifs..."
+(keyup.enter)="searchTag ()" 
+#txtTagInput 
+>
+<!-- REFERENCIA LOCAL, este simbolo # para darle un nombre al valor del input -->
+
+<!-- keyup en vez de click, interesante cuando quieres que haga algo cuando escriba algo el usuario en el input -->
